@@ -1,4 +1,9 @@
-;
+import prof1 from '../images/hey.png';
+import prof2 from '../images/roller_skating_wave.png';
+import prof3 from '../images/grin_smile.png';
+import prof4 from '../images/hi.png';
+import prof5 from '../images/hey_how.png';
+import prof6 from '../images/envelope_greeting.png';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -6,29 +11,105 @@ import { Card } from '@/components/ui/card';
 import { Github, Linkedin, Mail, Download, Code, Database, Globe } from 'lucide-react';
 
 const Home = () => {
+  // const skills = [
+  //   { name: 'JavaScript', level: 90 },
+  //   { name: 'React', level: 90 },
+  //   { name: 'Node.js', level: 90 },
+  //   { name: 'Python', level: 90 },
+  //   { name: 'TypeScript', level: 90 },
+  //   { name: 'SQL', level: 90 },
+  //   { name: 'Java', level: 90 },
+  //   { name: '.NET', level: 70 },
+  //   { name: 'Android Development', level: 80 },
+  //   { name: 'Linux Commands', level: 65 },
+  //   { name: 'Microsoft Office & Google Suite', level: 100 },
+  //   { name: 'Typing Skill with 80 WPM', level: 100 },
+  // ];
+
   const skills = [
-    { name: 'JavaScript', level: 90 },
-    { name: 'React', level: 90 },
-    { name: 'Node.js', level: 90 },
-    { name: 'Python', level: 90 },
-    { name: 'TypeScript', level: 90 },
-    { name: 'SQL', level: 90 },
-    { name: 'Java', level: 90 },
-    { name: '.NET', level: 70 },
-    { name: 'Android Development', level: 80 },
-    { name: 'Linux Commands', level: 65 },
-    { name: 'Microsoft Office & Google Suite', level: 100 },
-    { name: 'Typing Skill with 80 WPM', level: 100 },
-  ];
+  {
+    name: "JavaScript",
+    level: 90,
+    role: "Frontend / Backend Developer",
+    description: "Strong ES6+, async programming, DOM manipulation, and API integration."
+  },
+  {
+    name: "React",
+    level: 90,
+    role: "Frontend Developer",
+    description: "Building reusable components, hooks, routing, and state management."
+  },
+  {
+    name: "Node.js",
+    level: 90,
+    role: "Backend Developer",
+    description: "REST APIs, authentication, middleware, and server-side logic."
+  },
+  {
+    name: "Python",
+    level: 90,
+    role: "Backend / ML Engineer",
+    description: "Flask, automation scripts, data handling, and ML fundamentals."
+  },
+  {
+    name: "TypeScript",
+    level: 90,
+    role: "Frontend Developer",
+    description: "Type-safe React apps with scalable architecture."
+  },
+  {
+    name: "SQL",
+    level: 90,
+    role: "Database Developer",
+    description: "Complex queries, joins, optimization, and relational design."
+  },
+  {
+    name: "Java",
+    level: 90,
+    role: "Backend Developer",
+    description: "OOP, Spring Boot, REST APIs, and enterprise applications."
+  },
+  {
+    name: ".NET",
+    level: 70,
+    role: "Backend Developer",
+    description: "C#, ASP.NET fundamentals, and API development."
+  },
+  {
+    name: "Android Development",
+    level: 80,
+    role: "Mobile App Developer",
+    description: "Android apps with Firebase integration."
+  },
+  {
+    name: "Linux Commands",
+    level: 65,
+    role: "System / DevOps Support",
+    description: "File systems, permissions, networking, and server basics."
+  },
+  {
+    name: "Microsoft Office & Google Suite",
+    level: 100,
+    role: "Business / Data Support",
+    description: "Advanced Excel, documentation, presentations, and reporting."
+  },
+  {
+    name: "Typing Skill (80 WPM)",
+    level: 100,
+    role: "Productivity",
+    description: "Fast and accurate typing for development and documentation."
+  }
+];
+
 
   const prof_image = {
   // prof_image1: "src/images/profile_image.jpg",
-  prof_image3: "src/images/hey.png",
-  prof_image4: "src/images/roller_skating_wave.png",
-  prof_image5: "src/images/grin_smile.png",
-  prof_image2: "src/images/hi.png",
-  prof_image6: "src/images/hey_how.png",
-  prof_image7: "src/images/envelope_greeting.png"
+  prof_image3: prof1,
+  prof_image4: prof2,
+  prof_image5: prof3,
+  prof_image2: prof4,
+  prof_image6: prof5,
+  prof_image7: prof6
 };
 
   const images = Object.values(prof_image);
@@ -156,14 +237,14 @@ const Home = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Technical Skills</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skill, index) => (
               <Card key={skill.name} className="p-6 hover-lift animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
                     <h3 className="font-semibold text-lg">{skill.name}</h3>
                     {/* <span className="text-primary font-bold">{skill.level}%</span> */}
-                  </div>
+                  {/* </div>
                   <div className="w-full bg-muted rounded-full h-3">
                     <div 
                       className="h-3 bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000 ease-out"
@@ -173,7 +254,47 @@ const Home = () => {
                 </div>
               </Card>
             ))}
-          </div>
+          </div> */} 
+                  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {skills.map((skill, index) => (
+            <div
+              key={skill.name}
+              className="group relative rounded-xl border border-white/10 bg-gradient-to-br from-gray-900 to-gray-800 p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              {/* Skill Header */}
+              <div className="mb-4 flex items-center justify-between">
+                <h3 className="text-lg font-semibold text-white">
+                  {skill.name}
+                </h3>
+                {/* <span className="text-sm font-bold text-primary">
+                  {skill.level}%
+                </span> */}
+              </div>
+
+              {/* Progress Bar */}
+              <div className="h-3 w-full overflow-hidden rounded-full bg-gray-700">
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-primary to-secondary transition-all duration-1000 ease-out"
+                  style={{ width: `${skill.level}%` }}
+                />
+              </div>
+
+              {/* Hover Tooltip */}
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-xl bg-black/80 px-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div>
+                  <p className="text-sm font-semibold text-primary">
+                    {skill.role}
+                  </p>
+                  <p className="mt-2 text-sm text-gray-300">
+                    {skill.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
         </div>
       </section>
 

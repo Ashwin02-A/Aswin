@@ -1,5 +1,8 @@
 
 import React from 'react';
+import stoream from '../images/Stoream.png';
+import shcapp from '../images/social_media.png';
+import prison from '../images/prison_ministry.png';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -13,10 +16,10 @@ const Projects = () => {
       description: "A full-stack e-commerce platform built with React, Node.js, and Php Mysql.  Built an OTT platform for movie upload, streaming, and management. Improved user experience with secure access and dynamic content delivery",
       technologies: ["ReactJS", "NodeJS", "Html", "Tailwind", "Php", "Mysql","Razorpay API"],
       githubLink: "https://github.com/Ashwin02-A/Prison_Ministry",
-      liveLink: "src/images/BP231033_Stoream.pdf",
+      liveLink: "/Aswin/src/images/BP231033_Stoream.pdf",
       stars: 24,
       forks: 8,
-      image: "src/images/Stoream.png",
+      image: stoream,
       status: "Completed"
     },
     {
@@ -25,10 +28,10 @@ const Projects = () => {
       description: " Enabled college management to share updates, with a like feature for student interaction. Improved communication and engagement through consistent post sharing",
       technologies: ["XML", "Java", "Firebase"],
       githubLink: "https://github.com/aswin-a/task-manager",
-      liveLink: "src/images/BP231033_SHC.pdf",
+      liveLink: "/Aswin/src/images/BP231033_SHC.pdf",
       stars: 18,
       forks: 5,
-      image: "src/images/social_media.png",
+      image: shcapp,
       status: "Completed"
     },
     {
@@ -37,10 +40,10 @@ const Projects = () => {
       description: " Built a web application for the Project to manage volunteers, users, and admin efficiently. Introduced innovative role-based features to streamline workflow",
       technologies: ["Html5", "Css3", "Javascript", "Php", "Mysql"],
       githubLink: "https://github.com/aswin-a/weather-dashboard",
-      liveLink: "src/images/AU200517_Prison_Ministry.pdf",
+      liveLink: "/Aswin/src/images/AU200517_Prison_Ministry.pdf",
       stars: 15,
       forks: 3,
-      image: "src/images/prison_ministry.png",
+      image: prison,
       status: "Completed"
     }
   ];

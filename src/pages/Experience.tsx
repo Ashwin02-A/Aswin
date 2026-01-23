@@ -4,7 +4,8 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react';
-
+import queenbug from '../images/queenbuglogo.png';
+import shc from '../images/ClgLogo.png';
 const Experience = () => {
   const experiences = [
     {
@@ -15,7 +16,7 @@ const Experience = () => {
       startDate: "Nov 2024",
       endDate: "Mar 2025",
       duration: "4 months",
-      companyLogo: "src/images/queenbuglogo.png",
+      companyLogo: queenbug,
       description: "Leading the development of scalable web applications using React, Node.js, and cloud technologies. Collaborated with cross-functional teams to deliver high-quality software solutions. Implemented CI/CD pipelines and optimized application performance resulting in 40% faster load times.",
       achievements: [
         "Developed and maintained Web applications",
@@ -33,7 +34,7 @@ const Experience = () => {
       startDate: "Dec 2023",
       endDate: "Mar 2024",
       duration: "4 months",
-      companyLogo: "src/images/ClgLogo.png",
+      companyLogo: "https://drive.google.com/file/d/12Sr7WPfOgqdzy8MN4v0tU8Kdavup8Sbs/view?usp=sharing",
       description: " Contributed as part of the Data Analysis and Technical Team for the NAAC Accreditation process at Sacred Heart College, Tirupattur.",
       achievements: [
         "Data Processing with Excel ",

@@ -3,6 +3,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import profile_img from '@/images/profile_image.jpg';
 import { 
   User, 
   Mail, 
@@ -35,7 +36,7 @@ const PersonalInfo = () => {
 
   const prof_image = 
   {
-    prof_image1: "src/images/profile_image.jpg"
+    prof_image1 :  profile_img
   }
 
   const resume = 
